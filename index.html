@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Queenly With Phebe — Step Into Your Power With Self-Love</title>
+  <meta name="description" content="Queenly With Phebe — coaching, community & daily self-love inspiration. Book a free 15-minute call." />
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="antialiased bg-gradient-to-b from-purple-50 via-pink-50 to-yellow-50 text-gray-800">
+
+  <!-- NAV -->
+  <header class="fixed w-full z-30 top-0 backdrop-blur bg-white/60">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-gradient-to-br from-purple-600 to-pink-400 rounded-full flex items-center justify-center shadow">
+          <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+            <path d="M12 3l2.6 5.3L20 9.3l-4 3.9L17 20l-5-2.8L7 20l1-6.8L4 9.3l5.4-.9L12 3z" fill="currentColor"/>
+          </svg>
+        </div>
+        <span class="font-semibold text-lg md:text-xl">Queenly With Phebe</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6">
+        <a href="#about" class="hover:text-purple-700 transition">About</a>
+        <a href="#services" class="hover:text-purple-700 transition">Services</a>
+        <a href="#testimonials" class="hover:text-purple-700 transition">Testimonials</a>
+        <a href="#contact" class="hover:text-purple-700 transition">Contact</a>
+        <a href="#newsletter" class="ml-3 inline-flex items-center rounded-xl px-4 py-2 bg-purple-600 text-white shadow hover:scale-[1.02] transition">Book Free Call</a>
+      </nav>
+
+      <!-- Mobile Hamburger -->
+      <div class="md:hidden">
+        <button id="mobileToggle" aria-label="Open menu" aria-expanded="false" class="p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-300">
+          <svg id="hamburgerIcon" class="w-7 h-7 text-gray-800" viewBox="0 0 24 24" fill="none">
+            <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- MOBILE MENU (overlay) -->
+    <div style="height:300px;" id="mobileMenu" class="pl-3 fixed inset-0 bg-white/95 hidden flex-col items-center justify-center space-y-6 text-xl z-40">
+      <button id="mobileClose" class="absolute top-6 right-6 p-2 rounded-md">
+        <svg class="w-8 h-8 text-gray-700" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M6 18L18 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <a href="#about" class="block" data-close>About</a>
+      <a href="#services" class="block" data-close>Services</a>
+      <a href="#testimonials" class="block" data-close>Testimonials</a>
+      <a href="#contact" class="block" data-close>Contact</a>
+      <a href="#newsletter" class="block mt-3 inline-flex items-center rounded-xl px-6 py-3 bg-purple-600 text-white shadow" data-close>Book Free Call</a>
+    </div>
+  </header>
+
+  <main class="pt-24">
+
+    <!-- HERO -->
+    <section id="home" class="relative overflow-hidden">
+      <!-- decorative blob -->
+      <div class="absolute -top-20 -left-20 w-[520px] h-[520px] bg-gradient-to-tr from-purple-200 to-pink-200 rounded-full opacity-60 blur-3xl transform -rotate-12 pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-6 py-20 md:py-28 lg:py-36 flex flex-col md:flex-row items-center gap-12">
+        <!-- Left: text (keeps source order first so image sits below on mobile) -->
+        <div class="w-full md:w-1/2" data-animate>
+          <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-purple-900">
+            Step Into Your Power With <span class="text-pink-600">Self-Love</span>
+          </h1>
+          <p class="mt-6 text-lg md:text-xl text-gray-700 max-w-2xl">
+            Queenly With Phebe helps you discover daily practices that centre your worth, amplify your confidence, and create lasting joy. Book a complimentary 15-minute empowerment call.
+          </p>
+
+          <!-- NEW: Pain + Aspiration card inserted here -->
+          <div class="mt-8 bg-white/80 border border-purple-100 rounded-2xl p-5 shadow-sm" data-animate>
+            <h3 class="text-purple-800 font-semibold">Does any of these sound familiar?</h3>
+
+            <div class="mt-3 grid sm:grid-cols-2 gap-4 text-gray-700 text-sm">
+              <ul class="space-y-2 list-disc list-inside">
+                <li>You don’t feel good about yourself</li>
+                <li>You’re often the one people take for granted</li>
+                <li>You feel the urge to please even when it hurts you</li>
+                <li>You question whether you’re truly worthy, no matter how hard you try</li>
+              </ul>
+
+              <ul class="space-y-2 list-disc list-inside">
+                <li>You're ready to deepen your self-love and personal power</li>
+                <li>You’re building confidence that’s unshakable and true to you</li>
+                <li>You’re learning to believe that you’re worthy of every good thing</li>
+                <li>You desire a presence rooted in love, strength, and authentic respect</li>
+              </ul>
+            </div>
+
+            <p class="mt-4 text-sm text-gray-800 font-semibold">
+              If yes, <span class="text-purple-700">Queen Phebe is ready to HOLD AND GUIDE YOU</span> on a journey to total and complete self-love – whether you are struggling with low self-love or want to deepen what you already have.
+            </p>
+          </div>
+          <!-- end new card -->
+
+          <div class="mt-6 flex flex-wrap gap-4">
+            <a href="#contact" class="inline-flex items-center gap-3 rounded-xl px-6 py-3 bg-purple-600 text-white shadow hover:scale-[1.02] transition">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none"><path d="M2 7a2 2 0 0 1 2-2h3.6a1 1 0 0 1 .9.56l1.2 2.4a1 1 0 0 1-.12 1.04l-2 2a16 16 0 0 0 6.2 6.2l2-2a1 1 0 0 1 1.04-.12l2.4 1.2A1 1 0 0 1 22 18.4V22a2 2 0 0 1-2 2H7a5 5 0 0 1-5-5V7z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Book Free Call
+            </a>
+            <a href="#services" class="inline-flex items-center gap-3 rounded-xl px-6 py-3 border border-purple-200 bg-white/60 hover:bg-white transition">
+              Join Community
+            </a>
+          </div>
+
+          <!-- micro benefit bullets -->
+          <ul class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-600 max-w-md">
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-purple-600" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Free 15-minute clarity call
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-pink-500" viewBox="0 0 24 24" fill="none"><path d="M12 21s-6-4.35-9-7.05C-0.3 10.95 3 6 8 6c2.5 0 4 1.5 4 1.5S15.5 6 18 6c5 0 8.3 4.95 5 7.95C18 16.65 12 21 12 21z" stroke="currentColor" stroke-width="0.5"/></svg>
+              The Queen’s Court community
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right: image (second in source so it appears below text on mobile) -->
+        <div class="w-full md:w-1/2 flex justify-center" data-animate>
+          <div class="w-full max-w-md rounded-2xl overflow-hidden shadow-xl transform hover:scale-[1.01] transition">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Phebe - placeholder" class="w-full h-96 object-cover"/>
+          </div>
+        </div>
+      </div>
+
+      <!-- scroll indicator -->
+      <div class="absolute bottom-6 left-1/2 -translate-x-1/2">
+        <a href="#about" class="flex flex-col items-center gap-2 text-purple-700 opacity-90">
+          <span class="text-sm">Scroll</span>
+          <div class="w-8 h-12 rounded-full border-2 border-purple-200 flex items-start justify-center p-1">
+            <div class="w-2 h-2 rounded-full bg-purple-600 animate-bounce"></div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="max-w-7xl mx-auto px-6 py-20">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div class="space-y-6" data-animate>
+          <h2 class="text-2xl md:text-3xl font-bold text-purple-900">About Queenly With Phebe</h2>
+          <p class="text-gray-700 leading-relaxed">
+            Queenly With Phebe is a space for women to reclaim their worth through gentle practices, practical tools, and community support. Phebe believes that self-love is a daily gospel — small rituals, bold boundaries, and joyful celebration.
+          </p>
+          <p class="text-gray-700">
+            Mission: To empower women to embody confidence, create boundaries, and celebrate their unique journeys.
+          </p>
+          <div class="flex gap-3 mt-4">
+            <a href="#services" class="rounded-xl px-5 py-3 bg-pink-500 text-white">See Services</a>
+            <a href="#contact" class="rounded-xl px-5 py-3 border border-purple-200">Contact</a>
+          </div>
+        </div>
+
+        <div class="flex justify-center md:justify-end" data-animate>
+          <div class="w-80 h-80 rounded-2xl overflow-hidden shadow-lg">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Phebe portrait placeholder" class="w-full h-full object-cover"/>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="bg-white/60">
+      <div class="max-w-7xl mx-auto px-6 py-20">
+        <div class="text-center mb-10" data-animate>
+          <h3 class="text-xl font-semibold text-purple-800">Offerings</h3>
+          <p class="mt-2 text-gray-600 max-w-2xl mx-auto">Choose what fits your journey — from quick clarity calls to joining a warm, supportive community.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- Card 1 -->
+          <article class="rounded-2xl p-6 bg-gradient-to-b from-purple-50 to-white shadow hover:shadow-lg transition" data-animate>
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-lg bg-purple-100 flex items-center justify-center">
+                <svg class="w-6 h-6 text-purple-700" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.7 5.5L20 9l-4 3.9L17 20l-5-2.8L7 20l1-6.8L4 9l5.3-1.5L12 2z" fill="currentColor"/></svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-lg">Free 15-Minute Empowerment Call</h4>
+                <p class="text-sm text-gray-600 mt-1">Quick clarity, tools to start, and next steps tailored to you.</p>
+              </div>
+            </div>
+            <div class="mt-6 flex gap-3">
+              <a href="https://wa.me/2348012345678?text=Hi%20Phebe%2C%20I%27d%20like%20to%20book%20a%2015-minute%20empowerment%20call" target="_blank" class="rounded-xl px-4 py-2 bg-purple-600 text-white">Book Now</a>
+              <button class="rounded-xl px-4 py-2 border border-purple-200">Learn More</button>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="rounded-2xl p-6 bg-gradient-to-b from-pink-50 to-white shadow hover:shadow-lg transition" data-animate>
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-lg bg-pink-100 flex items-center justify-center">
+                <svg class="w-6 h-6 text-pink-600" viewBox="0 0 24 24" fill="none"><path d="M12 21s-6-4.35-9-7.05C-0.3 10.95 3 6 8 6c2.5 0 4 1.5 4 1.5S15.5 6 18 6c5 0 8.3 4.95 5 7.95C18 16.65 12 21 12 21z" fill="currentColor"/></svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-lg">The Queen’s Court Community</h4>
+                <p class="text-sm text-gray-600 mt-1">A warm, private group for daily inspiration and guided practices.</p>
+              </div>
+            </div>
+            <div class="mt-6 flex gap-3">
+              <a href="#contact" class="rounded-xl px-4 py-2 bg-pink-500 text-white">Join Community</a>
+              <button class="rounded-xl px-4 py-2 border border-pink-200">See Perks</button>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="rounded-2xl p-6 bg-gradient-to-b from-yellow-50 to-white shadow hover:shadow-lg transition" data-animate>
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-lg bg-yellow-100 flex items-center justify-center">
+                <svg class="w-6 h-6 text-yellow-600" viewBox="0 0 24 24" fill="none"><path d="M12 2a7 7 0 00-7 7c0 4 7 11 7 11s7-7 7-11a7 7 0 00-7-7z" fill="currentColor"/></svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-lg">Daily Self-Love Tips & Inspiration</h4>
+                <p class="text-sm text-gray-600 mt-1">Practical prompts, micro-practices and tiny rituals you can use every day.</p>
+              </div>
+            </div>
+            <div class="mt-6 flex gap-3">
+              <a href="#newsletter" class="rounded-xl px-4 py-2 bg-yellow-400 text-white">Subscribe</a>
+              <button class="rounded-xl px-4 py-2 border border-yellow-200">More</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="max-w-7xl mx-auto px-6 py-20">
+      <div class="text-center mb-8" data-animate>
+        <h3 class="text-xl font-semibold text-purple-800">What Queens Say</h3>
+        <p class="text-gray-600 mt-2">Real-feeling, encouraging notes from people who joined Phebe's work.</p>
+      </div>
+
+      <div class="relative" data-animate>
+        <div id="testCard" class="rounded-2xl p-8 bg-gradient-to-b from-white to-purple-50 shadow-lg max-w-3xl mx-auto text-center">
+          <p id="testQuote" class="text-lg italic text-gray-800">"Phebe helped me set small daily boundaries that changed how I show up in my relationships."</p>
+          <p id="testAuthor" class="mt-4 font-semibold text-purple-700">— Ada, Lagos</p>
+        </div>
+
+        <!-- controls -->
+        <div class="flex items-center justify-center gap-4 mt-6">
+          <button id="prevTest" class="p-2 rounded-full bg-white shadow hover:bg-gray-100" aria-label="Previous testimonial">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div id="dots" class="flex items-center gap-2"></div>
+          <button id="nextTest" class="p-2 rounded-full bg-white shadow hover:bg-gray-100" aria-label="Next testimonial">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="mt-8">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="rounded-2xl bg-gradient-to-r from-purple-700 to-pink-500 text-white p-10 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div>
+            <h4 class="text-2xl font-bold">Ready to begin your self-love journey?</h4>
+            <p class="mt-2 text-white/90">Message Phebe on WhatsApp for a friendly chat — or send an email to set up your free call.</p>
+          </div>
+          <div class="flex gap-3">
+            <a href="https://wa.me/2348012345678?text=Hi%20Phebe%2C%20I%27m%20interested%20in%20a%20free%20call" target="_blank" class="rounded-xl px-5 py-3 bg-white text-purple-700 font-semibold shadow">WhatsApp</a>
+            <a href="mailto:hello@queenlyphebe.com?subject=Free%20Call%20Request" class="rounded-xl px-5 py-3 border border-white/20">Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="max-w-7xl mx-auto px-6 py-20">
+      <div class="grid md:grid-cols-2 gap-10 items-start">
+        <div data-animate>
+          <h3 class="text-2xl font-semibold text-purple-800">Get in touch</h3>
+          <p class="text-gray-600 mt-3">Phone, WhatsApp, or a quick email — whichever feels easiest. We reply warmly.</p>
+
+          <div class="mt-6 space-y-3">
+            <div class="flex items-center gap-3">
+              <svg class="w-6 h-6 text-purple-600" viewBox="0 0 24 24" fill="none"><path d="M2 6.5A2.5 2.5 0 014.5 4h15A2.5 2.5 0 0122 6.5v11a2.5 2.5 0 01-2.5 2.5h-15A2.5 2.5 0 012 17.5v-11z" stroke="currentColor" stroke-width="1.2"/></svg>
+              <a href="tel:+2348012345678" class="text-gray-700">+234 801 234 5678</a>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="w-6 h-6 text-pink-500" viewBox="0 0 24 24" fill="none"><path d="M21 8v10a2 2 0 01-2 2H5a2 2 0 01-2-2V8" stroke="currentColor" stroke-width="1.2"/></svg>
+              <a href="mailto:hello@queenlyphebe.com" class="text-gray-700">hello@queenlyphebe.com</a>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="w-6 h-6 text-green-500" viewBox="0 0 24 24" fill="none"><path d="M21 15a2 2 0 01-2 2h-7l-4 4v-4H5a2 2 0 01-2-2V5a2 2 0 012-2h14a2 2 0 012 2z" stroke="currentColor" stroke-width="1.2"/></svg>
+              <a href="https://wa.me/2348012345678" target="_blank" class="text-gray-700">WhatsApp Chat</a>
+            </div>
+
+            <div class="mt-4 flex gap-3">
+              <a aria-label="Instagram" href="#" class="p-2 rounded-lg bg-white/80 shadow"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5z" stroke="currentColor" stroke-width="1.2"/></svg></a>
+              <a aria-label="LinkedIn" href="#" class="p-2 rounded-lg bg-white/80 shadow"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none"><path d="M16 8a6 6 0 016 6v6h-4v-6a2 2 0 00-2-2 2 2 0 00-2 2v6h-4V8h4v1.5" stroke="currentColor" stroke-width="1.2"/></svg></a>
+              <a aria-label="WhatsApp" href="https://wa.me/2348012345678" target="_blank" class="p-2 rounded-lg bg-white/80 shadow"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none"><path d="M21 12.25a9 9 0 10-1.5 4.75L22 22l-4.9-1.4A9 9 0 0021 12.25z" stroke="currentColor" stroke-width="1.2"/></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Newsletter / Form -->
+        <div data-animate>
+          <h4 class="text-lg font-semibold text-purple-800">Join the mailing list</h4>
+          <p class="text-gray-600 mt-2">Get daily self-love tips and updates. No spam — just gentle boosts to your inbox.</p>
+
+          <form id="newsletter" class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3" novalidate>
+            <input type="text" id="nm_name" name="name" placeholder="Your name" required class="px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-purple-200"/>
+            <input type="email" id="nm_email" name="email" placeholder="Your email" required class="px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-purple-200"/>
+            <div class="sm:col-span-2">
+              <button type="submit" id="subscribeBtn" class="w-full rounded-xl px-4 py-3 bg-purple-600 text-white">Subscribe</button>
+              <p id="newsletterMsg" class="mt-3 text-sm"></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-gray-200">
+    <div class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="text-sm text-gray-600">© 2025 Queenly With Phebe</div>
+      <div class="flex items-center gap-3">
+        <a href="#" aria-label="Instagram" class="text-gray-600 hover:text-purple-700">Instagram</a>
+        <a href="#" aria-label="LinkedIn" class="text-gray-600 hover:text-purple-700">LinkedIn</a>
+        <a href="https://wa.me/2348012345678" target="_blank" aria-label="WhatsApp" class="text-gray-600 hover:text-purple-700">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+    // ---------- Mobile menu toggle ----------
+    const mobileToggle = document.getElementById('mobileToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileClose = document.getElementById('mobileClose');
+
+    function openMobile() {
+      mobileMenu.classList.remove('hidden');
+      mobileToggle.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMobile() {
+      mobileMenu.classList.add('hidden');
+      mobileToggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+    mobileToggle.addEventListener('click', openMobile);
+    mobileClose.addEventListener('click', closeMobile);
+    // close mobile when clicking internal links
+    document.querySelectorAll('#mobileMenu [data-close]').forEach(el => {
+      el.addEventListener('click', closeMobile);
+    });
+
+    // ---------- In-page smooth scrolling (supports older browsers) ----------
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (!href || href === '#') return;
+        const targetEl = document.querySelector(href);
+        if (targetEl) {
+          e.preventDefault();
+          targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          // update focus for accessibility
+          setTimeout(() => { targetEl.setAttribute('tabindex', '-1'); targetEl.focus({ preventScroll: true }); }, 700);
+        }
+      });
+    });
+
+    // ---------- Simple fade-in on scroll using IntersectionObserver ----------
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('opacity-100', 'translate-y-0');
+          entry.target.classList.remove('opacity-0', 'translate-y-6');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('[data-animate]').forEach(el => {
+      // initial state (Tailwind classes)
+      el.classList.add('opacity-0', 'translate-y-6', 'transition', 'duration-700', 'ease-out');
+      observer.observe(el);
+    });
+
+    // ---------- Simple testimonial slider ----------
+    const testimonials = [
+      { quote: "Phebe showed me how to make gentle changes that built real confidence.", author: "Ada, Lagos" },
+      { quote: "The community felt like coming home. Daily prompts were small but powerful.", author: "Chinwe, Abuja" },
+      { quote: "That 15-minute call gave clarity I didn't expect — I left with real next steps.", author: "Nkechi, Port Harcourt" }
+    ];
+    let curTest = 0;
+    const testQuote = document.getElementById('testQuote');
+    const testAuthor = document.getElementById('testAuthor');
+    const dotsWrap = document.getElementById('dots');
+
+    function renderTestimonial(i) {
+      const t = testimonials[i];
+      testQuote.textContent = `"${t.quote}"`;
+      testAuthor.textContent = `— ${t.author}`;
+      // update dots
+      dotsWrap.querySelectorAll('button').forEach((btn, idx) => {
+        btn.classList.toggle('bg-purple-700', idx === i);
+        btn.classList.toggle('bg-purple-200', idx !== i);
+      });
+    }
+
+    // build dots
+    testimonials.forEach((_, idx) => {
+      const btn = document.createElement('button');
+      btn.className = 'w-3 h-3 rounded-full bg-purple-200';
+      btn.setAttribute('aria-label', 'Show testimonial ' + (idx + 1));
+      btn.addEventListener('click', () => {
+        curTest = idx;
+        renderTestimonial(curTest);
+        resetTestInterval();
+      });
+      dotsWrap.appendChild(btn);
+    });
+
+    document.getElementById('prevTest').addEventListener('click', () => {
+      curTest = (curTest - 1 + testimonials.length) % testimonials.length;
+      renderTestimonial(curTest);
+      resetTestInterval();
+    });
+    document.getElementById('nextTest').addEventListener('click', () => {
+      curTest = (curTest + 1) % testimonials.length;
+      renderTestimonial(curTest);
+      resetTestInterval();
+    });
+
+    // auto-play
+    let testInterval = setInterval(() => {
+      curTest = (curTest + 1) % testimonials.length;
+      renderTestimonial(curTest);
+    }, 6000);
+    function resetTestInterval() {
+      clearInterval(testInterval);
+      testInterval = setInterval(() => {
+        curTest = (curTest + 1) % testimonials.length;
+        renderTestimonial(curTest);
+      }, 6000);
+    }
+
+    // init
+    renderTestimonial(curTest);
+
+    // ---------- Newsletter form validation (client-side only) ----------
+    const newsletterForm = document.getElementById('newsletter');
+    const nmName = document.getElementById('nm_name');
+    const nmEmail = document.getElementById('nm_email');
+    const nmMsg = document.getElementById('newsletterMsg');
+    const nmBtn = document.getElementById('subscribeBtn');
+
+    function isValidEmail(email) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+
+    newsletterForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      nmMsg.textContent = '';
+      const name = nmName.value.trim();
+      const email = nmEmail.value.trim();
+
+      if (name.length < 2) {
+        nmMsg.textContent = 'Please enter your name.';
+        nmMsg.className = 'text-sm text-red-600 mt-3';
+        nmName.focus();
+        return;
+      }
+      if (!isValidEmail(email)) {
+        nmMsg.textContent = 'Please enter a valid email address.';
+        nmMsg.className = 'text-sm text-red-600 mt-3';
+        nmEmail.focus();
+        return;
+      }
+
+      // simulate successful subscribe (no backend)
+      nmMsg.textContent = 'Thanks for subscribing! Check your inbox for a welcome message.';
+      nmMsg.className = 'text-sm text-green-600 mt-3';
+      nmBtn.disabled = true;
+      nmBtn.textContent = 'Subscribed';
+      // optionally clear fields
+      nmName.value = '';
+      nmEmail.value = '';
+      setTimeout(() => {
+        nmBtn.disabled = false;
+        nmBtn.textContent = 'Subscribe';
+      }, 3000);
+    });
+
+    // Accessibility: close overlay on Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        if (!mobileMenu.classList.contains('hidden')) closeMobile();
+      }
+    });
+
+  </script>
+</body>
+</html>
